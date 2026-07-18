@@ -1,0 +1,184 @@
+.detail-page {
+  width: 860px;
+  max-width: 860px;
+  height: 720px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.detail-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.detail-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.detail-top {
+  display: grid;
+  grid-template-columns: 420px 416px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 860px;
+  max-width: 860px;
+  height: 320px;
+  margin: 0 auto 18px;
+}
+
+.detail-image-panel {
+  width: 100%;
+  max-width: 420px;
+}
+
+.detail-hero {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 32px 88px rgba(0, 0, 0, 0.45);
+}
+
+.detail-content {
+  width: 100%;
+  max-width: 416px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0;
+}
+
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.detail-servings {
+  color: #d7c796;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.detail-description {
+  color: #c8c0ba;
+  line-height: 1.85;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.detail-section {
+  background: #2b2f36;
+  border-radius: 30px;
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.detail-section h2 {
+  margin-bottom: 22px;
+  color: #f7f3ee;
+  font-size: 1.2rem;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  background: #22252d;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detail-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.category-badge,
+.diet-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.category-badge {
+  background: rgba(255, 143, 66, 0.16);
+  color: #ffc496;
+}
+
+.diet-badge.veg {
+  background: rgba(107, 194, 122, 0.18);
+  color: #a8f0c7;
+}
+
+.diet-badge.non-veg {
+  background: rgba(255, 110, 90, 0.18);
+  color: #ffb8ab;
+}
+
+.detail-toolbar .secondary-btn,
+.detail-toolbar .primary-btn {
+  min-width: 150px;
+}
+
+@media (max-width: 960px) {
+  .detail-top {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-hero {
+    height: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .detail-page {
+    padding: 24px 16px;
+  }
+
+  .detail-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .detail-toolbar-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .detail-hero {
+    height: 260px;
+  }
+}

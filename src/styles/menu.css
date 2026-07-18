@@ -1,0 +1,262 @@
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.filter-section {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(13, 18, 29, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.filter-group h3 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #f4efe9;
+  letter-spacing: 0.04em;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: #c8c0ba;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.chip.active {
+  background: var(--accent);
+  color: #121620;
+  border-color: var(--accent);
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f4efe9;
+}
+
+.search-form button {
+  background: var(--accent);
+  color: white;
+  min-width: 120px;
+  padding: 14px 20px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.results-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #f4efe9;
+  letter-spacing: -0.02em;
+}
+
+.results-header span {
+  color: #d6cec7;
+  font-size: 0.95rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.food-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(18, 24, 35, 0.96);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.food-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-card .diet-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+}
+
+.card-body p {
+  margin: 0;
+  color: #c8c0ba;
+  font-size: 16px;
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.diet-badge,
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.diet-badge.veg {
+  background: rgba(107, 194, 122, 0.16);
+  color: #a8f0c7;
+}
+
+.diet-badge.non-veg {
+  background: rgba(255, 110, 90, 0.18);
+  color: #ffb8ab;
+}
+
+.category-badge {
+  background: rgba(255, 143, 66, 0.14);
+  color: #ffc496;
+}
+
+.food-card h3,
+.saved-recipe-card h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.saved-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.saved-card-link .card-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.saved-card-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.saved-card-link .diet-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+}
+
+.saved-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+}
+
+.saved-card-body p {
+  margin: 0;
+  color: #c8c0ba;
+  font-size: 16px;
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.food-card p {
+  margin: 0;
+  color: #c8c0ba;
+  font-size: 16px;
+}
+
+.servings {
+  margin-top: auto;
+  color: #ffb870;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section {
+    padding: 22px;
+  }
+
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

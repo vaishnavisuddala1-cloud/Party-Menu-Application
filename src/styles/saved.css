@@ -1,0 +1,147 @@
+.saved-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.saved-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 16px;
+}
+
+.saved-header h1 {
+  margin: 4px 0 6px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.saved-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.saved-recipe-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(18, 24, 35, 0.96);
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.saved-recipe-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.saved-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 26px;
+}
+
+.saved-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.saved-card-top > div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.saved-recipe-card h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.saved-recipe-card p {
+  margin: 0;
+  color: #c8c0ba;
+  line-height: 1.7;
+}
+
+.save-card-meta,
+.saved-card-body .servings {
+  color: #b8b2aa;
+}
+
+.remove-btn {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 83, 83, 0.22);
+  background: rgba(255, 83, 83, 0.07);
+  color: #ffb8ab;
+}
+
+.servings {
+  display: block;
+  color: #b8b2aa;
+  font-size: 0.95rem;
+}
+
+.view-link {
+  display: none;
+}
+
+.saved-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  margin-top: 28px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  text-align: center;
+  color: #c8c0ba;
+}
+
+.saved-empty-state p {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+}
+
+.browse-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #121620;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .saved-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .saved-page {
+    padding: 16px;
+  }
+
+  .saved-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
