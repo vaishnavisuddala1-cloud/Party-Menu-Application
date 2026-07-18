@@ -55,6 +55,7 @@
   box-shadow: 0 10px 25px rgba(255, 140, 66, 0.32);
 }
 
+.signin-error,
 .error-text {
   color: #c94d3f;
   margin: 0;

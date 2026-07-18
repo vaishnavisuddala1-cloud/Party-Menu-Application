@@ -62,7 +62,7 @@ img {
 
 .page-shell {
   min-height: 100vh;
-  max-width: 1000px;
+  width: min(100%, 1000px);
   margin: 0 auto;
   padding: 32px 28px;
 }
@@ -214,5 +214,10 @@ img {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .header-actions .saved-link,
+  .header-actions .logout-btn {
+    width: 100%;
   }
 }
